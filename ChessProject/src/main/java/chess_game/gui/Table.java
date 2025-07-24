@@ -55,7 +55,7 @@ public class Table {
         
         // Try to connect to server, but don't exit if connection fails (for AI mode)
         try {
-            String ipadd = "192.168.29.129"; // Use localhost for local testing
+            String ipadd = "localhost"; // Use localhost for local testing
             System.out.println("DEBUG: Attempting to connect to server at "+ipadd+":4000");
             this.client.Connect( ipadd , 4000);
             if (this.client.socket == null) {
